@@ -8369,35 +8369,43 @@ h1, h2, h3, h4, h5,
   }
 }
 
-.price-list__title {
-  color: white;
-  font-size: 28px;
-  margin-bottom: 16px;
-  font-weight: 700;
-}
-
 .price-list {
-  list-style: none; /* убираем стандартные маркеры */
-  padding-left: 0;
-  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #c8a35f;
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+.service {
+  flex: 1;
+  padding-right: 20px;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 1.5;
 }
 
-.price-list li {
-  /* убираем padding-left, чтобы текст был строго с левого края */
-  margin-bottom: 10px;
-  /* выравнивание по левому краю (по умолчанию) */
+.price {
+  color: #ffc107;
+  font-weight: 600;
+  min-width: 70px;
+  text-align: right;
 }
-
-.price-list li::before {
-  content: "✄"; /* ножницы */
-  color: white;  /* белый цвет */
-  margin-right: 4px; /* небольшой пробел между иконкой и текстом */
-  display: inline;  /* чтобы не было переноса */
-}
-
-
 
 
 .hero {
@@ -8912,7 +8920,7 @@ h3.vr {
     z-index: 0; }
     @media (max-width: 767.98px) {
       .services-wrap.img {
-        height: 350px; } }
+        height: 500px; } }
     .services-wrap.img:after, .services-wrap.img:before {
       position: absolute;
       top: 50px;
@@ -8920,7 +8928,7 @@ h3.vr {
       right: 50px;
       bottom: 50px;
       content: '';
-      border: 3px solid #bf925b;
+      /*border: 3px solid #bf925b;*/
       z-index: -1; }
     .services-wrap.img:before {
       background: #000000;

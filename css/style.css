@@ -8181,6 +8181,12 @@ h1, h2, h3, h4, h5,
   color: black;
   font-weight: 400; }
 
+@media (max-width: 768px) {
+  h1.mb-4 {
+    font-size: 36px !important; /* увеличивает в 1.5 раза от базового размера h1 */
+  }
+}
+
 .text-primary {
   color: #bf925b !important; }
 
@@ -8398,6 +8404,7 @@ h1, h2, h3, h4, h5,
   padding-right: 20px;
   font-weight: 500;
   font-size: 18px;
+  text-align: right;
 }
 
 .price {
@@ -8890,8 +8897,8 @@ h3.vr {
       color: #bf925b; }
     .btn.btn-primary.btn-outline-primary {
       border: 3px solid #bf925b !important;
-      background: transparent !important;
-      color: #bf925b !important; }
+      background: #bf925b !important;
+      color: #fff !important; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 3px solid transparent !important;
         background: #bf925b !important;
@@ -8948,6 +8955,13 @@ h3.vr {
   .services-wrap.img::after{
     display: none;
   }
+}
+
+.brand-name {
+  font-family: 'Montserrat', sans-serif; /* Выбери нужный шрифт */
+  font-weight: 600;                      /* Подчеркнуть стиль */
+  letter-spacing: 0.5px;
+  text-transform: none; 
 }
 
 .text-about {
@@ -9052,7 +9066,7 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 3em 0 !important; } }
 
 .ftco-no-pt {
   padding-top: 0 !important; }
@@ -9065,6 +9079,31 @@ textarea.form-control {
 
 .ftco-bg-dark {
   background: #3c312e; }
+
+.footer-button {
+  display: inline-block;
+  width: 150px;
+  padding: 10px 20px;
+  background-color: #bf925b;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .footer-button {
+    display: block;
+    text-align: center;
+  }
+}
+
+
 
 @media (max-width: 768px) {
 .map-responsive {
@@ -9648,7 +9687,7 @@ textarea.form-control {
   .block-23 ul li, .block-23 ul li > a {
     display: table;
     line-height: 1.5;
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   .block-23 ul li span {
     color: rgba(255, 255, 255, 0.7); }
   .block-23 ul li .icon, .block-23 ul li .text {

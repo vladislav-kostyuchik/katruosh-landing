@@ -6787,6 +6787,13 @@ button.bg-dark:focus {
 .py-5 {
   padding-bottom: 3rem !important; }
 
+@media (max-width: 768px) {
+  .pb-5, .py-5 {
+    padding-bottom: 1rem !important;
+    padding-top: 2rem !important;
+  }
+}
+
 .pl-5,
 .px-5 {
   padding-left: 3rem !important; }
@@ -8458,7 +8465,7 @@ h1, h2, h3, h4, h5,
   .slider-text .text {
     width: 100%; }
   .slider-text .subheading {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
     color: #bf925b;
